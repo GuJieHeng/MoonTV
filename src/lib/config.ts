@@ -154,7 +154,7 @@ async function initConfig() {
             SiteName: process.env.SITE_NAME || 'MoonTV',
             Announcement:
               process.env.ANNOUNCEMENT ||
-              '本网站仅提供影视信息搜索服务，所有内容均来自第三方网站。本站不存储任何视频资源，不对任何内容的准确性、合法性、完整性负责。',
+              '欢迎来到我们的专属世界，小宝贝。',
             SearchDownstreamMaxPage:
               Number(process.env.NEXT_PUBLIC_SEARCH_MAX_PAGE) || 5,
             SiteInterfaceCacheTime: fileConfig.cache_time || 7200,
@@ -192,7 +192,7 @@ async function initConfig() {
         SiteName: process.env.SITE_NAME || 'MoonTV',
         Announcement:
           process.env.ANNOUNCEMENT ||
-          '本网站仅提供影视信息搜索服务，所有内容均来自第三方网站。本站不存储任何视频资源，不对任何内容的准确性、合法性、完整性负责。',
+          '欢迎来到我们的专属世界，小宝贝。',
         SearchDownstreamMaxPage:
           Number(process.env.NEXT_PUBLIC_SEARCH_MAX_PAGE) || 5,
         SiteInterfaceCacheTime: fileConfig.cache_time || 7200,
@@ -231,7 +231,7 @@ export async function getConfig(): Promise<AdminConfig> {
     adminConfig.SiteConfig.SiteName = process.env.SITE_NAME || 'MoonTV';
     adminConfig.SiteConfig.Announcement =
       process.env.ANNOUNCEMENT ||
-      '本网站仅提供影视信息搜索服务，所有内容均来自第三方网站。本站不存储任何视频资源，不对任何内容的准确性、合法性、完整性负责。';
+      '欢迎来到我们的专属世界，小宝贝。';
     adminConfig.UserConfig.AllowRegister =
       process.env.NEXT_PUBLIC_ENABLE_REGISTER === 'true';
     adminConfig.SiteConfig.ImageProxy =
@@ -315,7 +315,7 @@ export async function resetConfig() {
       SiteName: process.env.SITE_NAME || 'MoonTV',
       Announcement:
         process.env.ANNOUNCEMENT ||
-        '本网站仅提供影视信息搜索服务，所有内容均来自第三方网站。本站不存储任何视频资源，不对任何内容的准确性、合法性、完整性负责。',
+        '欢迎来到我们的专属世界，小宝贝。',
       SearchDownstreamMaxPage:
         Number(process.env.NEXT_PUBLIC_SEARCH_MAX_PAGE) || 5,
       SiteInterfaceCacheTime: fileConfig.cache_time || 7200,
